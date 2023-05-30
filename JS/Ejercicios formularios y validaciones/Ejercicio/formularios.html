@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario, validaciones</title>
+    <script src="/Ejercicio/js/formularios.js"></script>
+</head>
+
+<body>
+
+    <h1>Formularios, Validaciones</h1>
+
+    <form id="Ejercicio1" action="">
+        <fieldset>
+            <legend>
+                <h2>Ejercicio 1</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>Registro:</h3>
+                </legend>
+                <div>
+                    <label for="name"><strong>Nombre:</strong></label>
+                    <input type="text" id="name">
+
+                    <label for="surname"><strong>Apellido:</strong></label>
+                    <input type="text" name="surname" id="surname">
+
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="text" id="email">
+
+                    <label for="password"><strong>Password:</strong></label>
+                    <input type="password" name="password" id="password">
+
+                    <label for="comment"><strong>Comentarios:</strong></label>
+                    <textarea name="comment" id="comment" cols="30" rows="7"></textarea>
+
+                    <div>
+                        <label for="conditions">Acepta las <a href="pagina_condiciones.html">condiciones</a></label>
+                        <input type="checkbox" name="conditions" id="conditions" />
+                    </div>
+
+                    <button type="submit" onclick="EJERCICIO1()"> Enviar </button>
+                </div>
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <form id="Ejercicio2" action="">
+        <fieldset>
+            <legend>
+                <h2>Ejercicio 2</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>Ejercicio 2</h3>
+                </legend>
+                <div>
+                    <label for="name2"><strong>Escribe tu Nombre</strong></label>
+                    <input type="text" id="name2">
+
+                    <label for="surname2"><strong>Escribe tus Apellidos</strong></label>
+                    <input type="text" name="surname2" id="surname2">
+
+                    <label for="NIF"><strong>DNI</strong></label>
+                    <input type="text" id="NIF">
+
+                    <label for="telephone"><strong>Telefono</strong></label>
+                    <input type="telephone" name="telephone" id="telephone">
+
+                    <label for="comment2"><strong>Comentarios</strong></label>
+                    <textarea name="comment2" id="comment2" cols="30" rows="7"></textarea>
+
+                    <input type="time" name="time" id="time">
+
+                    <button type="submit" onclick="EJERCICIO2()"> Enviar </button>
+                </div>
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <form id="Ejercicio3" action="">
+        <fieldset>
+            <legend>
+                <h2>Ejercicio 3</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>Ejercicio 3</h3>
+                </legend>
+                <div>
+                    <label for="name3"><strong>Nombre</strong></label>
+                    <input type="text" id="name3">
+
+                    <label for="surname3"><strong>Apellidos</strong></label>
+                    <input type="text" name="surname3" id="surname3">
+
+                    <label for="email3"><strong>Escribe tu email</strong></label>
+                    <input type="text" id="email3">
+
+                    <label for="web"><strong>Escribe tu web Personal</strong></label>
+                    <input type="text" name="web" id="web">
+
+                    <button type="submit" onclick="EJERCICIO3()"> Enviar </button>
+                </div>
+            </fieldset>
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>

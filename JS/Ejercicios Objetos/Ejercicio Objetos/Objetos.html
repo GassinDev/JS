@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos</title>
+</head>
+
+<body>
+    <h1>Ejercicios Objetos</h1>
+        <div>
+            <h2>Ejercicio1 - Persona</h2>
+
+            <form action="" id="personForm">
+                <div>
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" />
+                </div>
+
+                <div>
+                    <label for="surname">Apellidos: </label>
+                    <input type="text" id="surname" />
+                </div>
+
+                <div>
+                    <label for="age">Edad: </label>
+                    <input type="number" id="age" min="0" max="125" />
+                </div>
+
+                <input type="submit" value="Generar Persona" onclick="handleSubmitPerson()" />
+            </form>
+            <div id="person"></div>
+        </div>
+    </section>
+
+    <h2>Ejercicio2 - Inventario </h2>
+    <section id="dos"></section>
+        <form action="" id="RopaForm">
+            <div>
+                <label for="article">Artículo: </label>
+                <input type="text" id="article" placeholder="Ingresa el Artículo :" />
+            </div>
+
+            <div>
+                <label for="talla">Talla: </label>
+                <input type="number" id="talla" min="1" max="100" placeholder="Ingrese la talla" />
+            </div>
+
+            <div>
+                <label for="quantity">Cantidad: </label>
+                <input type="number" id="quantity" min="0" max="999" placeholder="Ingrese la cantidad" />
+            </div>
+
+
+            <div>
+                <input type="button" value="Añadir" onclick="dataOBJ()">
+                <input type="button" value="Borrar" onclick="Delete()">
+            </div>
+
+        </form>
+        <div id="clothe">
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Talla</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="table" id="table">
+                </tbody>
+            </table>
+        </div>
+
+    <h2>Ejercicio3 - Alumnos</h2>
+
+    <div>
+        <form action="" id="AlumnoForm">
+            <div>
+                <label for="Student">Nombre</label>
+                <input type="text" id="Student" />
+            </div>
+            <div>
+                <label for="AgeStudent">Edad</label>
+                <input type="number" id="AgeStudent" min="1" max="125"/>
+            </div>
+            <div>
+                <label for="Level_English">Nivel de Inglés</label>
+                <select name="Level_English" id="Level_English">
+
+                    <option value="High">Alto</option>
+
+                    <option value="Medium">Medio</option>
+
+                    <option value="Low">Bajo</option>
+
+                </select>
+            </div>
+            <div>
+                <label for="Clase">Clase</label>
+                <select name="Clase" id="Clase">
+
+                    <option value="DAW1">DAW1</option>
+
+                    <option value="DAW2">DAW2</option>
+
+                    <option value="ASIR1">ASIR1</option>
+
+                    <option value="ASIR2">ASIR2</option>
+
+                </select>
+            </div>
+            <input type="button" value="Generar Alumno" onclick="Students()" /> 
+            <input type="button" value="Borrar Alumno" onclick="DeleteEst()" /> 
+
+            <div>
+                <label for="nuevaclase">Nueva Clase</label>
+                <input type="text" id="nuevaclase">
+            </div>
+
+            <input type="button" value="Añadir Clase" onclick="AddClase()" /> 
+        </form>
+        <div id="student"></div>
+    </div>
+</body>
+    <script src="./ObjetosJS.js"></script>
+    <script src="./Interfaz.js"></script>
+</html>

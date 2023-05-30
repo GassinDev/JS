@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos</title>
+</head>
+
+<body>
+    <h1>Ejercicios Objetos</h1>
+
+    <section>
+        <!-- <script>
+                //Objeto 1
+                let objeto1 = new Object();
+                objeto1.nombre = "Pepe";
+                objeto1.apellidos = "Fernández García";
+                objeto1.edad = 39;
+                function edad1(persona) {
+                    persona.edad = persona.edad + 1;
+                }
+                edad1(objeto1);
+                document.write(objeto1.nombre);
+                document.write(" ");
+                document.write(objeto1.apellidos);
+                document.write(" ");
+                document.write(objeto1.edad);
+                document.write(".</hr></br>");
+                //Objeto 2
+                let objeto2 = {
+                    nombre: "Lucía",
+                    apellidos: "García Gomez",
+                    edad: 42,
+                };
+                function edad2(persona) {
+                    persona.edad = persona.edad + 1;
+                }
+                edad2(objeto2);
+                document.write(objeto2.nombre);
+                document.write(" ");
+                document.write(objeto2.apellidos);
+                document.write(" ");
+                document.write(objeto2.edad);
+                document.write(".</hr>");
+            </script> -->
+
+        <div>
+            <h2>Datos Persona</h2>
+
+            <form action="" id="personForm">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" />
+                </div>
+
+                <div>
+                    <label for="surname">Apellidos</label>
+                    <input type="text" id="surname" />
+                </div>
+
+                <div>
+                    <label for="age">Edad</label>
+                    <input type="number" id="age" min="0" max="125" />
+                </div>
+
+                <input type="submit" value="Generar Persona" onclick="handleSubmitPerson()" />
+            </form>
+            <div id="person"></div>
+        </div>
+    </section>
+
+    <h2>Inventario</h2>
+    <section id="dos">
+        <form action="" id="ROPAForm">
+            <div>
+                <label for="articulos">Artículo</label>
+                <input type="text" id="articulos" placeholder="Ingresa el Artículo" />
+            </div>
+
+            <div>
+                <label for="talla">Talla</label>
+                <input type="number" id="talla" min="1" max="100" placeholder="ingresa la talla" />
+            </div>
+
+            <div>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="0" max="999" placeholder="ingresa la cantidad" />
+            </div>
+
+
+            <div>
+                <input type="button" value="Añadir" onclick="dataOBJ()">
+                <input type="button" value="Borrar" onclick="Eliminar()">
+            </div>
+
+        </form>
+        <div id="ropa">
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Talla</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="table" id="table">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <h2>Alumnos</h2>
+
+    <div>
+        <form action="" id="AlumnoForm">
+            <div>
+                <label for="Alumno">Nombre</label>
+                <input type="text" id="Alumno" />
+            </div>
+            <div>
+                <label for="AlumnoEdad">Edad</label>
+                <input type="number" id="AlumnoEdad" min="1" max="125"/>
+            </div>
+            <div>
+                <label for="Nivel_Ingles">Nivel de Inglés</label>
+                <select name="Nivel_Ingles" id="Nivel_Ingles">
+
+                    <option value="Alto">Alto</option>
+
+                    <option value="Medio">Medio</option>
+
+                    <option value="Bajo">Bajo</option>
+
+                </select>
+            </div>
+            <div>
+                <label for="Clase">Clase</label>
+                <select name="Clase" id="Clase">
+
+                    <option value="DAW1">DAW1</option>
+
+                    <option value="DAW2">DAW2</option>
+
+                    <option value="ASIR1">ASIR1</option>
+
+                    <option value="ASIR2">ASIR2</option>
+
+                </select>
+            </div>
+            <input type="button" value="Generar Alumno" onclick="Estudiantes()" /> 
+            <input type="button" value="Borrar Alumno" onclick="EliminarEst()" /> 
+
+            <div>
+                <label for="nuevaclase">Nueva Clase</label>
+                <input type="text" id="nuevaclase">
+            </div>
+
+            <input type="button" value="Añadir Clase" onclick="AddClase()" /> 
+        </form>
+        <div id="student"></div>
+    </div>
+   
+</body>
+<script src="./ObjetosJS.js"></script>
+<script src="./Interfaz.js"></script>
+</html>

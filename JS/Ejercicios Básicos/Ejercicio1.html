@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"> </script>
+
+</head>
+<body>
+
+    <h2>Ejercicio 1º</h2>
+    <p>Desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva
+        el cliente. Mostrar lo que debe abonar el comprador. Ingresar por teclado un precio con
+        decimales y la cantidad sin decimales, es decir un entero.
+        </p>
+    <button type="button" onclick="CantidadPago()">Ejercicio 1</button>
+
+
+    <h2>Ejercicio 2º</h2>
+    <p>Crear un input y un button, cuando le demos al botón, se añadirá el texto que hemos puesto
+        en el input en un div vacío. Recuerda se añadirá el texto, no se machaca lo que haya en el
+        div.</p>
+    <form>
+        <input type="text" id = "texto">   
+        <button type="button" onclick = "AñadirTexto()">Añadir Texto</button>
+    </form>
+    <div id = "mostrar texto"></div>
+
+
+    <h2>Ejercicio 3º</h2>
+    <p>Crear dos input de números y un botón, al pulsar el botón, mostrar en un alert quien es el
+        mayor de los dos.</p>
+    <form>
+        <input type="text" id = "number1">  
+        <input type="text" id = "number2">  
+        <button type="button" onclick="Mayor()">Mayor de los dos</button>
+    </form>
+    
+    
+    <h2>Ejercicio 4º</h2>
+    <p>Dado un input y un botón, escribir nombres de personas (solo controlamos que no esté
+        vacío) y lo mostramos en una lista desordenada.</p>
+    <form>
+        <input id="nombre" type="text" placeholder="Inserta un nombre" />
+        <button onclick="ListaDeNombresDesordenada(event)">Insertar</button>
+  
+      </form>
+      <div>
+        <ul id="listadenombres"></ul>
+      </div>
+
+    <h2>Ejercicio 5º</h2>
+    <p>Crea tres radiobuttons, cuando uno de ellos se seleccione que muestre un mensaje diciendo
+        que opción se seleccionó.</p>
+    <form>
+        <input type="radio" id="opcion1" name="opcion" value = "O1" onclick="DimeLaOpcion()">Opcion 1 <br>
+        <input type="radio" id="opcion2" name="opcion" value = "O2" onclick="DimeLaOpcion()">Opcion 2
+        <br><input type="radio" id="opcion3" name="opcion" value = "O3" onclick="DimeLaOpcion()">Opcion 3
+    </form>
+
+    <h2>Ejercicio 6º</h2>
+    <p>Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo
+        informar su suma y diferencia, en caso contrario informar el producto y la división del primero
+        respecto al segundo.
+        </p>
+
+    <form>
+        <input type="text" id = "n1">  
+        <input type="text" id = "n2">  
+        <button onclick="Funcion6()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 7º</h2>
+    <p>Programa en el que se ingresen tres notas de un alumno, si el promedio es menor que 5
+        mostrar el mensaje “Repetidor”, entre 5 y 7 mostrar el mensaje “Superado” y si es mayor o
+        igual a siete mostrar el mensaje ‘Promocionado’. Tener en cuenta que para obtener el
+        promedio debemos operar la suma de las notas; y luego hacer promedio=suma/3;</p>
+    <form>
+        <input type="text" id = "dato1">  
+        <input type="text" id = "dato2">  
+        <input type="text" id = "dato3"> 
+        <button onclick="Funcion7()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 8º</h2>
+    <p>Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.</p>
+    <form>
+        <input type="text" id = "dat1">  
+        <input type="text" id = "dat2">  
+        <input type="text" id = "dat3"> 
+        <button onclick="Funcion8()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 9º</h2>
+    <p>Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es
+        positivo, cero o negativo.
+        </p>
+    <form>
+        <input type="text" id = "da1">  
+        <button onclick="Funcion9()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 10º</h2>
+    <p>Se ingresa por teclado un número positivo de uno o dos dígitos controlar si el número
+        introducido es correcto y mostrar un mensaje indicando si el número tiene uno o dos dígitos
+        (recordar de convertir a entero con parseInt para preguntar posteriormente por una variable
+        entera). Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número
+        entero.</p>
+    <form>
+        <input type="text" id = "d1">  
+        <button onclick="Funcion10()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 11º</h2>
+    <p>Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras
+        y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.</p>
+    <form>
+        <input type="text" id = "dq1">  
+        <button onclick="Funcion11()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 12º</h2>
+    <p>Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha
+        corresponde a Navidad (se debe cargar por separado el dia, el mes y el año)
+        </p>
+    <form> 
+        DIA<input type="text" id = "dia1">  
+        MES<input type="text" id = "mes2">  
+        AÑO<input type="text" id = "año3">  
+        <button onclick="Funcion12()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 13º</h2>
+    <p>Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con
+        el segundo y a este resultado se lo multiplica por el tercero (tener en cuenta que puede haber
+        tres condiciones simples).</p>
+    <form> 
+        <input type="text" id = "f1">  
+        <input type="text" id = "f2">  
+        <input type="text" id = "f3">  
+        <button onclick="Funcion13()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 14º</h2>
+    <p>De un aspirante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente
+        información: nombre del aspirante, cantidad total de preguntas que se le realizaron y
+        cantidad de preguntas que contestó correctamente. Se pide confeccionar un programa que
+        lea los datos del aspirante e informe el nivel del mismo según el porcentaje de respuestas
+        correctas que ha obtenido, y sabiendo que:
+        ● Nivel superior: Porcentaje>=90%.
+        ● Nivel medio: Porcentaje>=75%.
+        ● Nivel bajo: Porcentaje>=50%.
+        ● Fuera de nivel: Porcentaje<.50%.</p>
+    <form> 
+        TOTAL DE PREGUNTAS<input type="text" id = "hw1">  
+        CORRECTAS<input type="text" id = "hw2">   
+        <button onclick="Funcion14()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 15º</h2>
+    <p>De un operario se conoce su sueldo y los años de antigüedad. Se pide realizar un programa
+        que lea los datos de entrada (sueldo y antigüedad) e informe de su sueldo actualizado según
+        las siguientes condiciones:
+        ● Si el sueldo es inferior a 1000 y su antigüedad es igual o superior a 10 años,
+        otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+        ● Si el sueldo es inferior a 1000 pero su antigüedad es menor a 10 años, otorgarle un
+        aumento de 5 %.
+        ● Si el sueldo es mayor o igual a 1000 mostrar el sueldo en la página sin cambios.
+        </p>
+    <form> 
+        SUELDO<input type="text" id = "ht1">  
+        ANTIGÜEDAD<input type="text" id = "ht2">   
+        <button onclick="Funcion15()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 16º</h2>
+    <p>Realizar un programa para un concesionario que calcule el descuento de un coche según su
+        marca y modelo, en base a los siguientes datos:
+        ● Si la marca es Renault tiene un 15% de descuento.
+        ● Si la marca es Ford y el modelo es Fiesta tiene un descuento del 7%
+        ● Si la marca es Ford y el modelo es Focus tiene un descuento del 10%
+        ● El resto solo tiene un descuento del 5%</p>
+    <form>
+        MARCA<input type="text" id = "coche1">
+        MODELO<input type="text" id = "coche2">
+        <button onclick="Funcion16()">Realizar</button>
+    </form>
+
+    
+    <h2>Ejercicio 17º</h2>
+    <p>Realizar un programa que introduciendo el mes y el año devuelva el número de días que
+        tiene dicho mes. Recordar que hay que controlar si el año es bisiesto.</p>
+    <form>
+        MES<input type="text" id = "mes">  
+        AÑO<input type="text" id = "año">  
+        <button onclick="Funcion17()">Realizar</button>
+    </form>
+
+
+    <h2>Ejercicio 18º</h2>
+    <p>Crear un programa donde el usuario introduzca su altura, edad y sexo y le devuelva el peso
+        ideal recomendado.
+        La fórmula a aplicar es: 50+((altura-150)/4)*3 + (Edad-20)/4 y si es mujer *0,9.
+        </p>
+    <form>
+        ALTURA<input type="text" id = "datoaltura">  
+        EDAD<input type="text" id = "datoedad">
+        SEXO(H/M)<input type="text" id = "sexo">
+        <button onclick="Funcion18()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 19º</h2>
+    <p> Realizar un programa que simule un Juego de dados. El usuario empieza con 50€ para
+        apostar. El usuario indica a qué número apostar entre el 1 y el 6. Se hace una asignación al
+        azar entre 1 y 6. Si el usuario acierta, gana el doble de lo apostado y si no acierta, pierde lo
+        apostado. El juego acaba cuando el usuario llega a 0€ (pierde) o llega a 200€ (gana).
+        </p>
+    <form>
+        <input type="text" id = "numero1">  
+        <input type="text" id = "apuesta2">
+        <button onclick="Funcion19()">Realizar</button>
+    </form>
+
+    <h2>Ejercicio 20º</h2>
+    <p>Calcular el precio de un producto introduciendo la base imponible (BI) y seleccionando el tipo
+        de iva que se le aplica (normal:21%, reducido:10%) e introduciendo el peso para calcular los
+        gastos de envío (Peso < 1Kg: 3€, Peso< 3kg:5€ y Peso>=3Kg 10€).
+        Precio= BI + Cuota IVA (%sobreBI) + Gastos envío</p>
+    <form>
+        BI<input type="text" id = "bi1">  
+        IVA<input type="text" id = "iva2">
+        PESO<input type="text" id = "peso3">
+        <button onclick="Funcion20()">Realizar</button>
+    </form>
+
+
+
+</body>
+</html>
